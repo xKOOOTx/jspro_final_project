@@ -1,10 +1,457 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
+<!--    <link rel="stylesheet" href="style/normalize.css">-->
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/5243fb0ce0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css"/>
+    <script src="node_modules/swiper/cjs/vue/swiper.js"></script>
+    <script src="node_modules/vue/dist/vue.min.js"></script>
+    <script src="node_modules/vue-awesome-swiper/dist/vue-awesome-swiper.js"></script>
+    <script>
+        Vue.use(window.VueAwesomeSwiper)
+    </script>
 </head>
 <body>
-    <h1>пока просто заглушка</h1>
+    <header class="header">
+        <div class="header__top center__content">
+            <div class="header__top_logo">
+                <a href="index.html" class="header__top_logo-link">Historical
+                <span class="header__top_logo-span">GAMES</span></a>
+            </div>
+            <div class="header__top_middle">
+                <a href="#" class="header__top_phone header__top_phone-email-text">
+                    <i class="fas fa-mobile-alt"></i>+123 456 7890</a>
+                <a href="#" class="header__top_email header__top_phone-email-text">
+                    <i class="far fa-envelope"></i>info@example.com</a>
+            </div>
+            <div class="header__top_right">
+                <form class="header__top_form">
+                    <input type="text" placeholder="search">
+                    <button><i class="search fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <nav class="header__navigation center__content">
+            <ul class="header__navigation_ul">
+                <li class="header__navigation_list">
+                    <a href="index.html" class="header__navigation_link">Home</a></li>
+                <li class="header__navigation_list">
+                    <a href="#" class="header__navigation_link">About</a></li>
+                <li class="header__navigation_list">
+                    <a href="#" class="header__navigation_link">Services</a></li>
+                <li class="header__navigation_list">
+                    <a href="#" class="header__navigation_link">Gallery</a></li>
+                <li class="header__navigation_list">
+                    <a href="#" class="header__navigation_link">News</a></li>
+                <li class="header__navigation_list">
+                    <a href="#" class="header__navigation_link">Team</a></li>
+                <li class="header__navigation_list">
+                    <a href="#" class="header__navigation_link">Contact Us</a></li>
+            </ul>
+        </nav>
+        <section class="header__bottom">
+            <p class="header__bottom_nunc">Nunc eget nibh</p>
+            <h1 class="header__bottom_morbi">Morbi in nisl auctor</h1>
+            <div class="header__bottom_socials">
+                <a href="" class="header__bottom_social-links">
+                    <i class="fab fa-facebook-f header__bottom_social-icons"></i></a>
+                <a href="" class="header__bottom_social-links">
+                    <i class="fab fa-twitter header__bottom_social-icons"></i>
+                </a>
+                <a href="" class="header__bottom_social-links">
+                    <i class="fas fa-rss header__bottom_social-icons"></i>
+                </a>
+                <a href="" class="header__bottom_social-links">
+                    <i class="fab fa-vk header__bottom_social-icons"></i>
+                </a>
+            </div>
+        </section>
+    </header>
+    <div class="about-us center__content">
+        <section class="about-us__text">
+            <h1 class="about-us__text_h1">about us!</h1>
+            <p class="about-us__text_p">
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                aut odit aut fugit, sed quia consequuntur magni dolores
+                eos qui ratione voluptatem sequi nesciunt. Neque porro
+                quisquam est, qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci velit. Ut&nbsp;enim ad&nbsp;minima
+                veniam, quis nostrum exercitationem ullam corporis suscipit
+                laboriosam, nisi ut&nbsp;aliquid ex&nbsp;ea&nbsp;commodi
+                consequatur?
+                Quis autem vel eum iure reprehenderit qui in&nbsp;ea&nbsp;
+                voluptate velit esse quam nihil molestiae consequatur, vel
+                illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </p>
+        </section>
+        <img src="img/index/aboutus.jpg" alt="about-us-img">
+    </div>
+    <div class="services center__content">
+        <h1 class="services__h1">Services</h1>
+        <div class="services__main center__content">
+            <div class="services__main_left">
+                <section class="services__main_block">
+                    <div class="services__main_block-small-left">
+                        <h1 class="services__main_h1">
+                            Repreh Qui In Ea Voluptate
+                        </h1>
+                        <p class="services__main_p">
+                            Itaque earum rerum hic tenetur a&nbsp;sapiente delectus, ut&nbsp;aut
+                            reiciendis voluptatibus maiores alias consequatur aut
+                            perferendis doloribus asperiores repellat.
+                        </p>
+                    </div>
+                    <a href="" class="services__main_smallLink">
+                        <div class="services__main_smallLink-block">
+                            <img src="img/index/branch.png" alt="branch.png" class="services__main_img-branch">
+                        </div>
+                    </a>
+                </section>
+                <section class="services__main_block">
+                    <div class="services__main_block-small-left">
+                        <h1 class="services__main_h1">
+                            Repreh Qui In Ea Voluptate
+                        </h1>
+                        <p class="services__main_p">
+                            Itaque earum rerum hic tenetur a&nbsp;sapiente delectus, ut&nbsp;aut
+                            reiciendis voluptatibus maiores alias consequatur aut
+                            perferendis doloribus asperiores repellat.
+                        </p>
+                    </div>
+                    <a href="" class="services__main_smallLink">
+                        <div class="services__main_smallLink-block">
+                            <img src="img/index/dollar.png" alt="dollar.png" class="services__main_img-dollar">
+                        </div>
+                    </a>
+                </section>
+                <section class="services__main_block">
+                    <div class="services__main_block-small-left">
+                        <h1 class="services__main_h1">
+                            Repreh Qui In Ea Voluptate
+                        </h1>
+                        <p class="services__main_p">
+                            Itaque earum rerum hic tenetur a&nbsp;sapiente delectus, ut&nbsp;aut
+                            reiciendis voluptatibus maiores alias consequatur aut
+                            perferendis doloribus asperiores repellat.
+                        </p>
+                    </div>
+                    <a href="" class="services__main_smallLink">
+                        <div class="services__main_smallLink-block">
+                            <img src="img/index/poll.png" alt="poll.png" class="services__main_img-poll">
+                        </div>
+                    </a>
+                </section>
+            </div>
+            <div class="services__main_right">
+                <section class="services__main_block services__main_block-right">
+                    <div class="services__main_block-small-right">
+                        <h1 class="services__main_h1">
+                            Repreh Qui In Ea Voluptate
+                        </h1>
+                        <p class="services__main_p">
+                            Itaque earum rerum hic tenetur a&nbsp;sapiente delectus, ut&nbsp;aut
+                            reiciendis voluptatibus maiores alias consequatur aut
+                            perferendis doloribus asperiores repellat.
+                        </p>
+                    </div>
+                    <a href="" class="services__main_smallLink">
+                        <div class="services__main_smallLink-block">
+                            <img src="img/index/arrow_up.png" alt="arrow_up.png" class="services__main_img-arrowUp">
+                        </div>
+                    </a>
+                </section>
+                <section class="services__main_block services__main_block-right">
+                    <div class="services__main_block-small-right">
+                        <h1 class="services__main_h1">
+                            Repreh Qui In Ea Voluptate
+                        </h1>
+                        <p class="services__main_p">
+                            Itaque earum rerum hic tenetur a&nbsp;sapiente delectus, ut&nbsp;aut
+                            reiciendis voluptatibus maiores alias consequatur aut
+                            perferendis doloribus asperiores repellat.
+                        </p>
+                    </div>
+                    <a href="" class="services__main_smallLink">
+                        <div class="services__main_smallLink-block">
+                            <img src="img/index/home.png" alt="home.png" class="services__main_img-home">
+                        </div>
+                    </a>
+                </section>
+                <section class="services__main_block services__main_block-right">
+                    <div class="services__main_block-small-right">
+                        <h1 class="services__main_h1">
+                            Repreh Qui In Ea Voluptate
+                        </h1>
+                        <p class="services__main_p">
+                            Itaque earum rerum hic tenetur a&nbsp;sapiente delectus, ut&nbsp;aut
+                            reiciendis voluptatibus maiores alias consequatur aut
+                            perferendis doloribus asperiores repellat.
+                        </p>
+                    </div>
+                    <a href="" class="services__main_smallLink">
+                        <div class="services__main_smallLink-block">
+                            <img src="img/index/settings.png" alt="settings.png" class="services__main_img-settings">
+                        </div>
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="ourGallery small__center">
+        <h1 class="ourGallery_h1">Our Gallery</h1>
+        <div class="ourGallery__main">
+            <section class="ourGallery__main_section">
+                <form action="" class="ourGallery__form">
+                    <img src="img/index/as_rogue.jpg" alt="as_rogue.jpg" class="ourGallery__form_img">
+                    <div class="ourGallery__form_textBlock">
+                        <h2 class="ourGallery__form_h2">Assasin’s Creed:
+                            <span class="ourGallery__form_span">Rogue</span>
+                        </h2>
+                    </div>
+                    <button class="ourGallery__form_button">buy</button>
+                </form>
+            </section>
+            <section class="ourGallery__main_section">
+                <form action="" class="ourGallery__form">
+                    <img src="img/index/tomb_rider.jpg" alt="tomb_rider.jpg" class="ourGallery__form_img">
+                    <div class="ourGallery__form_textBlock">
+                        <h2 class="ourGallery__form_h2">Tomb Raider
+                            <span class="ourGallery__form_span"></span>
+                        </h2>
+                    </div>
+                    <button class="ourGallery__form_button">buy</button>
+                </form>
+            </section>
+            <section class="ourGallery__main_section">
+                <form action="" class="ourGallery__form">
+                    <img src="img/index/ryse_sonOfRome.jpg" alt="ryse_sonOfRome.jpg" class="ourGallery__form_img">
+                    <div class="ourGallery__form_textBlock">
+                        <h2 class="ourGallery__form_h2">ryse:
+                            <span class="ourGallery__form_span">son of rome</span>
+                        </h2>
+                    </div>
+                    <button class="ourGallery__form_button">buy</button>
+                </form>
+            </section>
+            <section class="ourGallery__main_section">
+                <form action="" class="ourGallery__form">
+                    <img src="img/index/wow_wlk.jpg" alt="wow_wlk.jpg" class="ourGallery__form_img">
+                    <div class="ourGallery__form_textBlock">
+                        <h2 class="ourGallery__form_h2">World Of Warcraft:
+                            <span class="ourGallery__form_span">Wrath Of The Linch King</span>
+                        </h2>
+                    </div>
+                    <button class="ourGallery__form_button">buy</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <div class="testimonial small__center">
+        <h1 class="testimonial_h1">testimonial</h1>
+        <swiper class="swiper" :options="swiperOption">
+            <swiper-slide>Slide 1</swiper-slide>
+            <swiper-slide>Slide 2</swiper-slide>
+            <swiper-slide>Slide 3</swiper-slide>
+            <swiper-slide>Slide 4</swiper-slide>
+            <swiper-slide>Slide 5</swiper-slide>
+            <swiper-slide>Slide 6</swiper-slide>
+            <swiper-slide>Slide 7</swiper-slide>
+            <swiper-slide>Slide 8</swiper-slide>
+            <swiper-slide>Slide 9</swiper-slide>
+            <swiper-slide>Slide 10</swiper-slide>
+            <div class="swiper-button-prev" slot="button-prev"></div>
+            <div class="swiper-button-next" slot="button-next"></div>
+        </swiper>
+    </div> <!-- ВСТАВИТЬ VUE отзывы -->
+    <div class="newsAndEvents"></div> <!-- ВСТАВИТЬ VUE новости -->
+    <div class="ourTeam small__center">
+        <h1 class="ourTeam_h1">our team</h1>
+        <div class="ourTeam__block">
+            <section class="ourTeam__section">
+                <a href="#" class="ourTeam__section_link">
+                    <img src="img/index/our_team_Mary.jpg" alt="our_team_Mary.jpg" class="ourTeam__section_img">
+                    <div class="ourTeam__section_about">
+                        <h1 class="ourTeam__section_about-name">Mary Jane</h1>
+                        <p class="ourTeam__section_about-city">Vestibulum</p>
+                    </div>
+                    <div class="ourTeam__section_socials">
+                        <a href="" class="ourTeam__section_socials-links">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="ourTeam__section_socials-links">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="ourTeam__section_socials-links">
+                            <i class="fas fa-rss"></i>
+                        </a>
+                        <a href="#" class="ourTeam__section_socials-links">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </div>
+                </a>
+            </section>
+            <section class="ourTeam__section">
+                <a href="#" class="ourTeam__section_link">
+                    <img src="img/index/our_team_Peter.jpg" alt="our_team_Peter.jpg" class="ourTeam__section_img">
+                    <div class="ourTeam__section_about">
+                        <h1 class="ourTeam__section_about-name">Peter Parker</h1>
+                        <p class="ourTeam__section_about-city">Vestibulum</p>
+                    </div>
+                    <div class="ourTeam__section_socials">
+                        <a href="#" class="ourTeam__section_socials-links">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="ourTeam__section_socials-links">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="ourTeam__section_socials-links">
+                            <i class="fas fa-rss"></i>
+                        </a>
+                        <a href="#" class="ourTeam__section_socials-links">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </div>
+                </a>
+            </section>
+            <section class="ourTeam__section">
+                <a href="#" class="ourTeam__section_link">
+                    <img src="img/index/our_team_John.jpg" alt="our_team_John.jpg" class="ourTeam__section_img">
+                    <div class="ourTeam__section_about">
+                        <h1 class="ourTeam__section_about-name">John Watson</h1>
+                        <p class="ourTeam__section_about-city">Vestibulum</p>
+                    </div>
+                    <div class="ourTeam__section_socials">
+                        <a href="#" class="ourTeam__section_socials-links">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="ourTeam__section_socials-links">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="ourTeam__section_socials-links">
+                            <i class="fas fa-rss"></i>
+                        </a>
+                        <a href="#" class="ourTeam__section_socials-links">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </div>
+                </a>
+            </section>
+            <section class="ourTeam__section">
+                <a href="#" class="ourTeam__section_link">
+                    <img src="img/index/our_team_Steven.jpg" alt="our_team_Steven.jpg" class="ourTeam__section_img">
+                    <div class="ourTeam__section_about">
+                        <h1 class="ourTeam__section_about-name">Steven Wilson</h1>
+                        <p class="ourTeam__section_about-city">Vestibulum</p>
+                    </div>
+                    <div class="ourTeam__section_socials">
+                        <a href="#" class="ourTeam__section_socials-links">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="ourTeam__section_socials-links">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="ourTeam__section_socials-links">
+                            <i class="fas fa-rss"></i>
+                        </a>
+                        <a href="#" class="ourTeam__section_socials-links">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </div>
+                </a>
+            </section>
+        </div>
+
+    </div>
+    <div class="subscribe">
+        <h1 class="subscribe_h1">Subscribe with Us</h1>
+        <form action="" class="subscribe__form">
+            <input type="text" class="subscribe__form_input" placeholder="email">
+            <button class="subscribe__form_button">subscribe</button>
+        </form>
+    </div>
+    <div class="contact center__content">
+        <h1 class="contact_h1">contact us</h1>
+        <div class="contact__main">
+            <section class="contact__main_section">
+                <h2 class="contact__main_h2">Get in touch with us</h2>
+                <p class="contact__main_p">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,sheets
+                    containing Lorem Ipsum passages sed&nbsp;do, At&nbsp;vero eos et&nbsp;accusamus et
+                    iusto odio digs qui blanditiis</p>
+                <p class="contact__main_p">
+                    Leningradsky AVE 39, BLDG 79
+                    MOSCOW 125167, Russia
+                </p>
+                <p class="contact__main_p">Telephone : +00&nbsp;111&nbsp;222 3333</p>
+                <p class="contact__main_p">FAX : +1&nbsp;888&nbsp;888 4444</p>
+                <p class="contact__main_p">
+                    Email : <span class="contact__main_p-emailSpan">mail@example.com</span>
+                </p>
+            </section>
+            <form action="" class="contact__form">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+            </form>
+        </div>
+    </div>
+    <div class="map">
+        <h1 class="map_h1">route map</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.798442916507!2d37.53594080398547!3d55.79673772310281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b549c0af2d5e3f%3A0xa77899d557548e3a!2sMail.Ru%20Group!5e0!3m2!1sru!2sru!4v1605615445083!5m2!1sru!2sru" width="1169" height="298" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <footer class="footer">
+        <p class="footer__copyright">
+            <script>
+                document.write(`&copy; ${new Date().getFullYear()} Историческе Игры. Все права защищены;`)
+            </script>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script>
+        import Vue from 'vue'
+        import VueAwesomeSwiper from 'vue-awesome-swiper'
+
+        // import style (>= Swiper 6.x)
+        import 'swiper/swiper-bundle.css'
+
+        // import style (<= Swiper 5.x)
+        import 'swiper/css/swiper.css'
+
+        Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
+    </script>
+    <script>
+        import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+        import 'swiper/css/swiper.css'
+
+        export default {
+            name: 'swiper-example-navigation',
+            title: 'Navigation',
+            components: {
+                Swiper,
+                SwiperSlide
+            },
+            data() {
+                return {
+                    swiperOption: {
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+<!--    <style lang="scss" scoped>-->
+<!--      @import './base.scss';-->
+<!--    </style>-->
 </body>
 </html>
