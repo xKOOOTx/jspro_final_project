@@ -1,0 +1,18 @@
+{
+  "name": "final_project",
+  "version": "1.0.0",
+  "description": "final_jspro_project",
+  "main": "index.js",
+  "dependencies": {
+    "swiper": "^6.3.5",
+    "vue": "^2.6.12",
+    "vue-awesome-swiper": "^4.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo 'Error: no test specified' && exit 1",
+    "start": "node index.js"
+  },
+  "author": "KOOOT aka Alex Gusev",
+  "license": "ISC"
+}
